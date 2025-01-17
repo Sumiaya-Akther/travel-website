@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+   --primary-color: #FF5400;
+}
+.layout{
+    width: 80%;
+    margin: 0 auto;
+}
+section{
+    margin-top: 10%;
+   
+}
+/* header nav img{
+    width: 100%;
+} */
+span{
+    color: var(--primary-color);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 2.3rem;
+    
+}
+nav h2{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+nav{
+    /* padding: 50px 30px 0px 30px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.navbar, .item a{
+    text-decoration: none;
+    color: #424247;
+}
+.home a{
+    color: var(--primary-color);
+}
+
+.list, .navbar {
+    display: flex; 
+    justify-content: space-between;
+    font-size: 1.25rem;
+    align-items: center;
+    list-style-type: none;
+    gap: 25px;
+}
+.banner{
+    background-image: url(../image/Group\ 13\ \(1\)\ \(1\).png);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.banner h1{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.banner p{
+    font-size: 1rem;
+    margin-top: 30px;
+}
+.banner .form{
+    background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 8px;
+   padding: 0px 10px 0px 10px;
+}
+.frm{
+    height: 70px;
+    width: 800px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+input{
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    width: 174px;
+    height: 52px;   
+}
+select{
+    color: rgba(19, 19, 24, 0.5);
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    width: 174px;
+    height: 52px;
+}
+/* tour css */
+.tour{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 8%;
+}
+.Popular-col h2{
+     font-size: 2.25rem;
+     font-weight: bold;
+}
+.Popular-col p{
+    font-size: 1rem;
+    color: #5A5A5D;
+    line-height: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Popular-col ul li{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #5A5A5D;
+    margin-top: 2%;
+}
+.tour img{
+    width: 90%;
+    height: 440px;
+    border-radius: 6px;
+}
+.popular-col, ul li{
+font-size: 18px;
+}
+/* destination section */
+.maldives{
+   background-image: url(../image/Rectangle\ 5.png);
+   background-size: cover;
+   width: 600px;
+   height: 300px;
+   border-radius: 10px;
+}
+.indonesia{
+    background-image: url(../image/Rectangle\ 8.png);
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+.srilanka{
+    background-image: url(../image/Rectangle\ 6.png);
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+.north{
+    background-image: url(../image/Rectangle\ 7.png);
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+.kashmir{
+    background-image: url(../image/Rectangle\ 9.png);
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+.bangladesh{
+background-image: url(../image/Rectangle\ 11.png);
+background-size: cover;
+width: 500px;
+height: 300px;
+border-radius: 10px;
+}
+.bandarban{
+background-image: url(../image/Rectangle\ 10.png);
+background-size: cover;
+width: 700px;
+height: 300px;
+border-radius: 10px;
+}
+.text-mid{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    height: 300px;
+}
+.picture-1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.picture-2{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.picture-3{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+/* choose section */
+.choose {
+    text-align: center;
+}
+.choose h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.choose p{
+    font-size: 1rem;
+    color: #5A5A5D;
+    margin-top: .65rem;
+    margin-bottom: 3rem;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
+.card-1{
+    background-color: #e5e1dd;
+    padding: 50px;
+    border-radius: 6px;
+}
+.card-2{
+    background-color: #d5e1e5;
+    padding: 50px;
+    border-radius: 6px;
+}
+#card-3{
+    width: 500px;
+    height: 120px;
+    background-color: #e5e1dd;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 6px; 
+}
+/* discount section */
+.book-1{
+    background-image: url(../image/Group\ 39.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.book-2{
+    background-image: url(../image/Group\ 40.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.book-3{
+    background-image: url(../image/Group\ 39.png);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.morning{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 95px;
+}
+.night{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    right: 50px;
+    bottom: 95px;
+}
+.evening{
+    width: 350px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    left: 50px;
+    bottom: 95px;  
+}
+/* see more section */
+.video{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 8%;
+}
+.video iframe{
+    width: 550px;
+    height: 340px;
+    border-radius: 6px;
+}
+.see-more h2{
+    font-size: 2.8rem;
+    font-weight: bold;
+}.see-more p{
+    font-size: 1rem;
+    color: #5A5A5D;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.see-more ul li{
+    font-size: 1rem;
+    font-weight: 500;
+    /* color: #5A5A5D; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* subscribe css */
+.subscribe{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe-col{
+    padding: 8px;
+    width: 600px;
+    height: 310px;
+    border: 2px solid rgb(232, 152, 4);
+    border-radius: 8px;
+}
+.subscribe h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.subscribe p{
+    font-size: 1.2rem;
+    line-height: 50px;
+    color: #5A5A5D;
+    /* margin-bottom: 2%; */
+}
+.image{
+    background-image: url(../image/Rectangle\ 8\ \(1\).png);
+    background-size: cover;
+    border-radius: 10px;
+    width: 535px;
+    height: 330px;
+    position: relative;
+}
+.save{
+    padding: 10px;
+    width: 175px;
+    border-radius: 10px;
+    height: 68px;
+    background-color: var(--primary-color);
+    color: white;
+    position: absolute;
+    /* rotate: -25deg; */
+    transform: rotate(-25deg);
+    right: 0;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    text-align: center;
+    
+}
+.save h3{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.save p{
+    color: white;
+    font-size: 1rem;
+}
+.subscribe-btn{
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 24px;
+    width: 570px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.text{
+    font-size: 1rem;
+    width: 560px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 230, 230);
+    padding: 5px;  
+}
+input[type=email]{
+    font-size: 1rem;
+    width: 560px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 230, 230);
+    padding: 5px;
+
+}
+/* footer css */
+footer{
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 6%;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    text-align: center;
+    font-size: 10px;
+    color: #5A5A5D;
+    margin-top: 2%;
+}
+footer, i{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    gap: 3%;
+}
+
+/* responsive css */
+/* mobile device */
+@media screen and (max-width:576px){
+    nav,nav ul, .tour,
+    .picture-1, .picture-2,
+    .picture-3, .video, .subscribe{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .frm{
+        width: 200px;
+        height: 190px;
+        padding: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    input, select{
+        width: 200px;
+        height: 40px;
+    }
+    .tour img{
+        width: 100%;
+    }
+    .bandarban, .bangladesh, .kashmir,
+    .srilanka, .indonesia, .maldives,
+    .north, .maldives{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #card-3{
+        width: 70%;
+        margin-top: 350px;
+    }
+   .morning, .night{
+    width: 250px;
+    right: 20px;
+    bottom: 70px;
+   } 
+   .evening{
+    width: 250px;
+    left: 20px;
+    bottom: 70px;
+   }
+   .video iframe, .subscribe-col, .image{
+    width: 100%;
+   }
+}  
+    
+/* medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+    nav,nav ul, .tour,
+    .picture-1, .picture-2,
+    .picture-3, .video, .subscribe {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .frm{
+        width: 400px;
+        height: 150px;
+        padding: 10px;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bandarban, .bangladesh, .kashmir,
+    .srilanka, .indonesia, .maldives,
+    .north, .maldives{
+        width: 100%;
+    }
+    input, select{
+        width: 200px;
+    }
+    .tour img{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #card-3{
+        width: 85%;
+        margin-top: 260px;
+    }
+    .morning, .night{
+        width: 250px;
+        right: 20px;
+        bottom: 70px;
+       } 
+    .evening{
+        width: 250px;
+        left: 20px;
+        bottom: 70px;
+       } 
+    .video iframe, .subscribe-col, .image{
+        width: 100%;
+    }
+    .subscribe{
+ 
+       flex-direction: column;
+    }
+}
